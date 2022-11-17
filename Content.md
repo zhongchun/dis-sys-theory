@@ -1,5 +1,10 @@
 # Content
 
+## Topics
+- communication
+- scheduler
+- consistency
+- failover
 
 ## Reference
 1. van Steen & Tanenbaum. Distributed Systems
