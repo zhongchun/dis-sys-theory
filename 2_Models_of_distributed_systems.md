@@ -1,8 +1,8 @@
 ## 2.1 The two generals problem
 The two generals problme is proposed by Jim N. Gray in 1978.
 Jim N. Gray. Notes on data base operating systems. In R. Bayer, R.M. Graham, and G. Seegmuller, editors, Operating Systems, volume 60 of LNCS, pages 393–481. Springer, 1978. doi:10.1007/3-540-08755-9 9. URL http: //jimgray.azurewebsites.net/papers/dbos.pdf.
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1668933882226-b34801ed-c951-46db-8722-e0a25bdae72d.png#averageHue=%23f7f6f6&clientId=u95127501-b5be-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=525&id=uf500b984&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1050&originWidth=1412&originalType=binary&ratio=1&rotation=0&showTitle=false&size=200239&status=done&style=none&taskId=udb5b4a34-0c4f-4e0b-b5ad-894e7b05994&title=&width=706)
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1668933893009-3b97c775-8183-466a-9389-1283609292c1.png#averageHue=%23f7f6f6&clientId=u95127501-b5be-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=523&id=ue7dbe281&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1046&originWidth=1394&originalType=binary&ratio=1&rotation=0&showTitle=false&size=153091&status=done&style=none&taskId=u2ccfdda8-df30-475d-8bda-094f2eb4e2e&title=&width=697)
+![Two generals problem](./images/two_generals_problem_1.png)
+![Two generals problem](./images/byzantine_generals_problem_2.png)
 ### How should the genrals decide
 
 - General 1 always attacks, even if no response is received?
@@ -15,9 +15,9 @@ Jim N. Gray. Notes on data base operating systems. In R. Bayer, R.M. Graham, and
 ## 2.2 The Byzantine generals problem
 The Byzantine generals problem is proposed by Lamport in 1982.
 Leslie Lamport, Robert Shostak, and Marshall Pease. The Byzantine generals problem. ACM Transactions on Programming Languages and Systems, 4(3):382–401, 1982. doi:10.1145/357172.357176. URL http://research.microsoft.com/en-us/um/ people/lamport/pubs/byz.pdf.
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1668934429420-ecf3c4f1-bfc1-4428-9612-69b114a86f4c.png#averageHue=%23f8f8f8&clientId=u95127501-b5be-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=530&id=ue1f26cdb&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1060&originWidth=1410&originalType=binary&ratio=1&rotation=0&showTitle=false&size=166749&status=done&style=none&taskId=u4438b07c-960c-4344-9d4b-c683fe2fc4d&title=&width=705)
+![Byzantine generals problem](./images/byzantine_generals_problem_1.png)
 The challenge in the Byzantine setting is that some generals might be "traitors": they might try to deliberately and maliciously mislead and confuse the other generals.
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1668934503262-0adf2ba5-6af0-458d-bb95-6023f782925d.png#averageHue=%23f5f4f4&clientId=u95127501-b5be-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=515&id=u6f502567&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1030&originWidth=1388&originalType=binary&ratio=1&rotation=0&showTitle=false&size=174013&status=done&style=none&taskId=uecaeb2d1-8857-470d-b31c-8258210eb8c&title=&width=694)
+![Byzantine generals problem](./images/byzantine_generals_problem_2.png)
 ### The Byzantine generals problem
 
 - Each general is either malicous or honese
