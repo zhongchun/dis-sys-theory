@@ -80,9 +80,9 @@ May contact multiple servers, discard outliers, average rest.
 Makes multiple requests to the same server, use statistics to reduce random error due to variations in network latency.
 Reduces clock skew to a few milliseconds in good network conditions, but can be much worse!
 ### Estimating time over a network
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1669025951300-24a4f189-6ef1-404f-9e92-c2269f12fe12.png#averageHue=%23f7f7f7&clientId=u6e58a21c-3f5f-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=526&id=u1730d91c&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1052&originWidth=1420&originalType=binary&ratio=1&rotation=0&showTitle=false&size=158038&status=done&style=none&taskId=u941a3039-4f60-4c4f-bb89-ef3eb06e673&title=&width=710)
+![3-1.png](./images/3-1.png)
 ### Correcting clock skew
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1669025986525-8b61ab32-25f3-4c79-b890-00ab18d41eb8.png#averageHue=%23f4f4f4&clientId=u6e58a21c-3f5f-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=532&id=u837d898a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1064&originWidth=1428&originalType=binary&ratio=1&rotation=0&showTitle=false&size=236224&status=done&style=none&taskId=uf470f5d1-7fc4-4945-8f56-e5fc8125634&title=&width=714)
+![3-2.png](./images/3-2.png)
 The fact that clocks may be stepped by NTP, i.e. suddenly moved forwards or backwards, has an important implication for any software that needs to measure elapsed time.
 ### Monotonic and time-of-day clocks
 #### Time-of-day clock
@@ -101,9 +101,9 @@ The fact that clocks may be stepped by NTP, i.e. suddenly moved forwards or back
 - Linux: clock_gettime(CLOCK_MONOTONIC)
 ## 3.3 Causality and happends-before
 ### Orders of messages
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1669027135913-e3931f25-73b8-4e0f-82fc-4d83036f253c.png#averageHue=%23f7f7f7&clientId=u6e58a21c-3f5f-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=524&id=ud5144365&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1048&originWidth=1408&originalType=binary&ratio=1&rotation=0&showTitle=false&size=157721&status=done&style=none&taskId=u220bf331-fb44-4c24-997d-248c5760030&title=&width=704)
+![3-3.png](./images/3-3.png)
 ### Physical timestamps inconsistent with causality
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1669027172970-d38636c6-f399-4974-843d-9c5f22d3affc.png#averageHue=%23f6f6f6&clientId=u6e58a21c-3f5f-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=522&id=u7db8ef89&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1044&originWidth=1394&originalType=binary&ratio=1&rotation=0&showTitle=false&size=186891&status=done&style=none&taskId=ue67a69ef-be21-4ce4-b85a-3e02f8a7ce3&title=&width=697)
+![3-4.png](./images/3-4.png)
 ### The happens-before relation
 An event is something happening at one node (sending or receiving a message, or a local execution step).
 We say event a happens before event b (written a → b) if: 
@@ -113,5 +113,6 @@ We say event a happens before event b (written a → b) if:
 - there exists an event c such that a→c and c→b.
 
 The happens-before relation is a partial order: it is possible that neither a→b nor b→a. In that case, a and b are concurrent (written a || b).
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/1349795/1669027317776-7da99862-e30d-4ddd-b63d-98ada4d5cc21.png#averageHue=%23f9f8f8&clientId=u6e58a21c-3f5f-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=529&id=u146fe01e&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1058&originWidth=1400&originalType=binary&ratio=1&rotation=0&showTitle=false&size=151090&status=done&style=none&taskId=u541a04fb-4e2b-4570-8f09-b1fc944466f&title=&width=700)
 
+### Happens-before relation example
+![3-5.png](./images/3-5.png)
