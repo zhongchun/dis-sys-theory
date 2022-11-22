@@ -11,7 +11,7 @@ Logical clocks are designed to **capture causal dependencies**.
 ![4-2](./images/4-2.png)
 ![4-3](./images/4-3.png)
 A Lamport timestamp is essentially an integer that counts the number of events that have occurred. As such, it has no direct relationship to pyhsical time.
-![4-4](https://cdn.nlark.com/yuque/0/2022/png/1349795/1669126703258-922c675b-7281-4cc0-9ef6-4ded4852b69f.png#averageHue=%23f6f6f6&clientId=u30973867-850b-4&crop=0&crop=0&crop=1&crop=1&from=paste&height=456&id=u7ec88a0a&margin=%5Bobject%20Object%5D&name=image.png&originHeight=912&originWidth=1218&originalType=binary&ratio=1&rotation=0&showTitle=false&size=158413&status=done&style=none&taskId=uc893c920-657a-4f58-be43-b67c71c0f13&title=&width=609)
+![4-4](./images/4-4.png)
 Happens-before relation is a partial order.
 Lamport timestamps is a total order. But it is in general not possible to tell whether those events are concurrent or whether one happened before the other. If we want to acheive these, we need a different type of logical time: a vector clock.
 ### Vector clocks
