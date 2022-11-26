@@ -1,4 +1,4 @@
-Replication means to maintain a copy of the same data on mutiple nodes, each of which is called a replica.
+Replication means to maintain a copy of the same data on mutiple nodes, each of which is called a replica. It is one of the main mechanisms we have for achieving **fault tolerance**.
 
 - Keeping a copy of the same data on multiple nodes
 - Databases, filesystems, caches, ...
